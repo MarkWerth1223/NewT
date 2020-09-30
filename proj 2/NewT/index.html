@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Second test</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="nav-wrapper">
+
+            <div class="left">
+
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About Me</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="brand">
+                    <div>Mark Werth</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-wraper">
+
+
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item">
+
+                    <div class="img-background" style="background-image: url(images/background.jpg);"> </div>
+
+                    <div class="img-text-wraper">
+                        <div class="logo-warper">
+                            <img src="images/logo.jpg" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            This is test 1 to see if it actual works.
+                        </div>
+
+                    </div>
+                   
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="img-background" style="background-image: url(images/aa.jpg);"> </div>
+
+                    <div class="img-text-wraper">
+                        <div class="logo-warper">
+                            <img src="images/logo.jpg" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            This is test 2 to see if it actual works.
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="img-background" style="background-image: url(images/bb.jpg);"> </div>
+
+                    <div class="img-text-wraper">
+                        <div class="logo-warper">
+                            <img src="images/logo.jpg" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            This is test 3 to see if it actual works.
+                        </div>
+
+                    </div>
+                   
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <footer>testing new</footer>
+
+    </div>
+
+    
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-items-wrapper')
+
+    portfolioItems.forEach(portfolioItems => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);     
+            portfolioItem.childNodes[1].classList.add('img-darken');    
+        })
+        
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');    
+        })
+    })
+</script>
+
+</html>
